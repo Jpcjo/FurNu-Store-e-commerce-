@@ -111,7 +111,7 @@ const Navbar = () => {
                 />
 
                 <Link
-                  to={`http://furnu-store-fwudesign.netlify.app/products?search=${isValue}&category=all&company=all&order=a-z&price=100000`}
+                  to={`https://furnu-store-fwudesign.netlify.app/products?search=${isValue}&category=all&company=all&order=a-z&price=100000`}
                   type="submit"
                   className="btn btn-xs bg-white"
                 >
