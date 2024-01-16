@@ -20,7 +20,7 @@ export const action =
 
     try {
       const response = await customFetch.post("/auth/local", data);
-      // console.log(response);
+      // console.log(response.data.user);
       // results of response.data =  action.payload   see userSlice.jsx
       store.dispatch(loginUser(response.data));
       // same as useDispatch. But useDispatch can't be used here.
