@@ -10,7 +10,7 @@ const url = "/products";
 export const loader =
   (queryClient) =>
   async ({ request }) => {
-    // console.log(request);
+    console.log(request);
 
     // Alternatives below::::
     // const params1 = new URL(request.url).searchParams;
@@ -41,6 +41,7 @@ export const loader =
 
     const response = await customFetch(url, { params });
     console.log(response);
+    // request filtered API(params) result through Axios
     // Including the params -> response = results after apply all the searching params.
     // Fop example: if search kids(catergory), artifex(company), the result will be
     // after filtering these searches
@@ -57,6 +58,7 @@ export const loader =
     //   sort: 'ascending',
     // };            Make a GET request with query parameters
     // axios.get(apiUrl, { params: queryParams })
+    //result:  apiUrl?search=keyword&category=all&sort=ascending.
 
     const products = response.data.data;
     console.log(products);

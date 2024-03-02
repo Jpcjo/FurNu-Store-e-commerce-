@@ -42,6 +42,7 @@ const ProductsGrid = () => {
 
         const addToCart = () => {
           const productToAdd = getProduct(productId);
+          console.log(productToAdd);
           const cartProduct = {
             cartID: productToAdd.id,
             productID: productToAdd.id,

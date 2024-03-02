@@ -14,13 +14,13 @@ export const action =
     // console.log(request);
 
     const formData = await request.formData();
-    // console.log(formData);
+    console.log(formData);
     const data = Object.fromEntries(formData);
-    // console.log(data);
+    console.log(data);
 
     try {
       const response = await customFetch.post("/auth/local", data);
-      // console.log(response.data.user);
+      console.log(response.data);
       // results of response.data =  action.payload   see userSlice.jsx
       store.dispatch(loginUser(response.data));
       // same as useDispatch. But useDispatch can't be used here.

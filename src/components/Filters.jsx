@@ -8,7 +8,7 @@ import FormCheckbox from "./FormCheckbox";
 const Filters = () => {
   const { meta, params } = useLoaderData();
   const { search, company, category, shipping, order, price } = params;
-  // console.log(params);
+  console.log(company);
   return (
     <Form
       className="bg-gray-100 rounded-md px-8 py-4 grid gap-x-4 gap-y-8 

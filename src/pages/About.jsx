@@ -190,7 +190,7 @@ const About = () => {
         </div>
       </section>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 };
